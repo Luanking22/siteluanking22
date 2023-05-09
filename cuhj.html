@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+    <title>VAI ME DAR?</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+      }
+      button {
+        margin: 10px;
+        display: inline-block;
+      }
+      #nao {
+        position: absolute;
+      }
+      #seguir {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CUZINHO HJ?</h1>
+    <img src="https://telegra.ph/file/c5ff40bfce05d10b26bb9.jpg" alt="cuzinho hj?" width="150px">
+    <br>
+    <button onclick="window.location.href='https://youtu.be/wtY5EcEJ3aI'">Sim</button>
+    <button id="nao" onmouseover="moveButton()">Não</button>
+    <br>
+    <button id="seguir" onclick="window.location.href='https://luanking22.github.io/siteluanking22/Index.html'">Seguir o Luan</button>
+    <script>
+      function moveButton() {
+        var button = document.getElementById("nao");
+        var width = window.innerWidth - button.clientWidth;
+        var height = window.innerHeight - button.clientHeight;
+        var newPosX = Math.floor(Math.random() * width);
+        var newPosY = Math.floor(Math.random() * height);
+        button.style.left = newPosX + "px";
+        button.style.top = newPosY + "px";
+      }
+    </script>
+  </body>
+</html>
