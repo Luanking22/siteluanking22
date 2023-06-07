@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quer Namorar Comigo?</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        #certeza {
+            display: none;
+        }
+
+        #aviso {
+            display: none;
+            color: red;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #imagem {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quer Namorar Comigo?🫵❤️</h1>
+
+    <button id="sim">Sim</button>
+    <button id="nao">Não</button>
+
+    <div id="certeza">
+        <p>Você tem certeza?</p>
+        <button id="euTenhoCerteza">Eu tenho certeza</button>
+    </div>
+
+    <div id="aviso">
+        ⚠️ERRO⚠️ TENTE NOVAMENTE
+    </div>
+
+    <script>
+        var simButton = document.getElementById('sim');
+        var naoButton = document.getElementById('nao');
+        var certezaDiv = document.getElementById('certeza');
+        var euTenhoCertezaButton = document.getElementById('euTenhoCerteza');
+        var avisoDiv = document.getElementById('aviso');
+
+        simButton.addEventListener('click', function() {
+            certezaDiv.style.display = 'block';
+        });
+
+        euTenhoCertezaButton.addEventListener('click', function() {
+            window.location.href = 'https://api.whatsapp.com/send?phone=5521994819872&text=Oi%20lindo%20%F0%9F%98%8D%20eu%20quero%20namorar%20com%20voc%C3%AA%20';
+        });
+
+        naoButton.addEventListener('click', function() {
+            avisoDiv.style.display = 'block';
+            setTimeout(function() {
+                avisoDiv.style.display = 'none';
+            }, 2000);
+        });
+
+        function moveButton() {
+            var newX = Math.floor(Math.random() * (window.innerWidth - naoButton.offsetWidth));
+            var newY = Math.floor(Math.random() * (window.innerHeight - naoButton.offsetHeight));
+
+            naoButton.style.left = newX + 'px';
+            naoButton.style.top = newY + 'px';
+
+            if (newX < 0 || newY < 0 || newX > window.innerWidth || newY > window.innerHeight) {
+                moveButton();
+            }
+        }
+
+        naoButton.addEventListener('mouseover', function() {
+            moveButton();
+        });
+    </script>
+
+  <br>
+  
+  <br>
+   <img id="imagem" src="https://telegra.ph/file/bbb1a6b03e2663fef6cb9.png">
+</body>
+</html>
