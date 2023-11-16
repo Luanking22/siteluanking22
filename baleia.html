@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚠️SALVE A BALEIA DA SUA MÃE ⚠️</title>
+  <style>
+    body {
+      background-color: black;
+      color: yellow;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center; /* Centraliza o conteúdo */
+    }
+    
+    .text {
+      max-width: 45%;
+      margin: 0 auto; /* Centraliza o texto */
+    }
+    
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+    
+    .scrolling-text {
+      overflow: hidden;
+      height: 200px;
+      position: relative;
+    }
+    
+    .scrolling-text p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 1.5;
+      animation: scroll-up 20s linear infinite;
+    }
+    
+    @keyframes scroll-up {
+      0% {
+        top: 100%;
+      }
+      100% {
+        top: -800%;
+      }
+    }
+    
+    .button {
+      background-color: yellow;
+      color: black;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://pngfre.com/wp-content/uploads/anime-33-759x1024.png" alt="Imagem de uma baleia">
+    <div class="text">
+      <h1>PORQUE A BALEIA DA SUA MÃE É TÃO GORDA? VEJA OS MOTIVOS ABAIXO:</h1>
+      <div class="scrolling-text">
+        <p>
+          As baleias, com sua impressionante massa corporal, possuem camadas espessas de gordura conhecidas como blubber ou gordura subcutânea. Essa reserva de gordura desempenha papéis vitais na sobrevivência desses mamíferos marinhos. Em primeiro lugar, o blubber atua como um isolante térmico, fundamental para manter a temperatura corporal das baleias em ambientes de água fria. Essa adaptação é crucial para proteger os órgãos internos e permitir que esses animais sobrevivam em condições extremas de temperatura no oceano. Além disso, essa gordura funciona como uma reserva de energia. Durante migrações de longa distância ou períodos de reprodução, quando a comida pode ser escassa, as baleias usam essas reservas de gordura para sustentar suas necessidades energéticas. Isso é especialmente importante, já que algumas espécies de baleias realizam migrações impressionantes, cobrindo milhares de quilômetros. Outro papel importante desempenhado pela gordura é a contribuição para a flutuabilidade das baleias. Esta gordura menos densa que a água ajuda esses gigantes do mar a permanecer na água com menos esforço, permitindo que descansem, se desloquem e se alimentem de maneira mais eficiente. Assim, a gordura abundante das baleias não é apenas um traço físico, mas uma adaptação essencial para sua sobrevivência no ambiente marinho desafiador, garantindo que esses majestosos animais possam prosperar e manter suas funções vitais ao longo de suas vidas.
+        </p>
+      </div>
+      <button class="button" onclick="copiarChavePix()">Salve a baleia da sua mãe</button>
+      <button class="button" onclick="mostrarNotificacao()">Quem somos nós?</button>
+    </div>
+  </div>
+
+  <script>
+    function copiarChavePix() {
+      const chavePix = 'c0466280-c8fa-4eca-b645-e5cece97f42d';
+      navigator.clipboard.writeText(chavePix);
+      alert('Obrigado por ajudar a alimentar a baleia da sua mãe 😭 🐳');
+      window.location.href = 'https://app.picpay.com/user/luanhenrique004';
+    }
+
+    function mostrarNotificacao() {
+      alert('Somos uma organização especializada em comer o cu do curioso');
+    }
+  </script>
+</body>
+</html>
